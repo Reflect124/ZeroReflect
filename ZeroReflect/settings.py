@@ -56,7 +56,7 @@ ROOT_URLCONF = 'ZeroReflect.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['Template'],
+        'DIRS': [os.path.join(BASE_DIR, "Template")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
