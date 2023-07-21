@@ -20,11 +20,11 @@ def home(request):
         'services': serviceData,
         'footers': footerData,
     }
-    return render(request, 'Home/index.html', context)
+    return render(request, 'home/index.html', context)
 
 
 def category(request):
-    return render(request, 'Home/category.html')
+    return render(request, 'home/category.html')
 
 
 def about(request):
@@ -35,7 +35,7 @@ def about(request):
         'about':aboutData,
         'footers': footerData,
     }
-    return render(request, 'Home/about.html',context)
+    return render(request, 'home/about.html',context)
 
 
 def contact(request):
@@ -66,7 +66,7 @@ def contact(request):
         'footers': footerData,
         'form': form,
     }
-    return render(request, 'Home/contact.html',context)
+    return render(request, 'home/contact.html',context)
 
 def postDetails(request, post_id):
     blogData = get_object_or_404(Bolg,pk=post_id)
@@ -76,4 +76,4 @@ def postDetails(request, post_id):
         'blog':blogData,
         'footers': footerData,
     }
-    return render(request, 'Home/postDetails.html', context)
+    return render(request, 'home/postDetails.html', context)
