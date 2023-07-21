@@ -1,0 +1,16 @@
+<!-- ======================================= Footer Section =================================== -->
+<section class="footerSection0">
+    <div class="container">
+        <div class="row ">
+            <div class="col">
+                <h4 class="footerText3">গাছ লাগান পরিবেশ বাঁচান.</h4>
+            </div>
+            <div class="col ">
+                {% for footer in footerData %}
+                    <a href="{{ footer.website }}"><img class="footesImg1" src="{{ footer.logo.url }}" alt=""></a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======================================= End Footer Section =================================== -->

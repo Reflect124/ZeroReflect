@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+    {% include 'Home/carousel.html' with carouselData=carousels %}
+    <!-- with carouselData(Variable) =carousels (context Key) its come form view.py -->
+
+    <!--================================== About Section  ============================================ -->
+    <div class="about_section layout_padding">
+        <div class="container">
+            <div class="row">
+                {% for about in abouts %}
+                    <div class="col-md-6">
+                        <div class="about_taital_main">
+                            <div class="about_taital">{{ about.title }}</div>
+                            <p class="about_text">{{ about.firstImpression }}</p>
+                            <p class="about_text">{{ about.textFild }}</p>
+                            <div class="read_bt"><a href="{% url 'about' %}">Read More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="aboutImageBody ">
+                            <img class="aboutImage" src="{{ about.image.url }}">
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- ======================================= End About Section =================================== -->
+    <!-- ======================================= Service Section =================================== -->
+    <section class="serviceSection">
+        <div class="container">
+            <h3 class="serviceHead">Our Services</h3>
+            <div class="row justify-content-md-center">
+                {% for service in services %}
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center serviceCard0">
+                            <img class="serviceImage" src="{{ service.logo.url }}" alt="">
+                            <h5>{{ service.title }}</h5>
+                            <p>{{ service.text }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- ======================================= End Service Section =================================== -->
+    <!-- ======================================= Blog Section ========================================== -->
+    <section class="blogSection0">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    {% for blog in blogs %}
+                        <div class="card blogCard1">
+                        <img class="blogImage2" src="{{ blog.image.url }}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><a target="_blank" href="{% url 'postDetails' blog.id %}">{{ blog.title }}</a></h5>
+                            <p class="card-text">{{ blog.textBolg }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+    <!-- ======================================= End Blog Section =================================== -->
+    <!-- =======================================  Clients Section =================================== -->
+    <section class="clientsSection0">
+        <div class="clientsBody1">
+            <div class="container">
+                <h2 class="clientsHeadText4">Major Client Portfolio</h2>
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        {% for client in clients %}
+                            <a href="{{ client.website }}"><img class="clientsImg3" src="{{ client.logo.url }}"></a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================================= End Clients Section =================================== -->
+
+
+
+{% endblock %}

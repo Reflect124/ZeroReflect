@@ -1,0 +1,236 @@
+/* ------------------------- About Section  ------------------------------ */
+.aboutSection02 {
+	background: rgba(187, 187, 187, 0.21);
+}
+
+.about_section {
+    width: 100%;
+    float: left;
+}
+
+.about_taital_main {
+	width: 100%;
+	float: left;
+	padding: 50px 0px;
+}
+
+.about_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #f76d37;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #4c4c4b;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.about_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #4c4c4b;
+    margin: 0px;
+    padding-top: 10px;
+}
+.aboutImage {
+    width: 70vh;
+    border: 1px dotted black;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 23px 71px;
+}
+.aboutImageBody {
+	margin: 50px 0px 30px 0;
+}
+
+.read_bt {
+    width: 175px;
+    float: left;
+    padding-top: 40px;
+}
+
+.read_bt a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    background-color: #252525;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.read_bt a:hover {
+    color: #ffffff;
+    background-color: #f76d37;
+}
+.aboutImageTwo{
+    width: 100%;
+    height: 90vh;
+}
+.aboutTextTwo {
+	text-align: center;
+	border-bottom: 1px solid;
+	margin: 40px 0 20px 0;
+	padding-bottom: 10px;
+}
+.aboutText2 {
+	font-size: 18px;
+	padding: 40px;
+	text-align: justify;
+}
+.ourMissionVision{
+    background: url("/static/img/abouts.png") no-repeat center center fixed;
+    height: 60vh;
+    position: relative;
+    display: table;
+    width: 100%;
+    background-size: cover;
+}
+.ourMVSection {
+    width: 400px;
+    text-align: center;
+    /* background: #ddd; */
+    margin: auto;
+    width: 50%;
+    margin-top: 140px;
+    padding: 15px;
+}
+/* -------------------------------------- End About section ----------------------------------- */
+
+/* -------------------------------------- Service Section ----------------------------------- */
+.serviceSection {
+    background: url("/static/img/service.png") no-repeat center center fixed;
+    height: 60vh;
+    position: relative;
+    display: table;
+    width: 100%;
+    padding-bottom: 30px;
+    background-size: cover;
+}
+.serviceHead {
+	color: white;
+	text-align: center;
+	border-bottom: 1px solid white;
+	padding: 5px;
+	margin: 35px 0 10px 0;
+}
+.serviceImage {
+    width: 60px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.serviceCard0 {
+	background-color: #fff !important;
+	padding: 10px 20px;
+	margin: 20px 10px 29px 10px;
+	border-radius: 79px 0 45px 0;
+	/* margin-bottom: 30px; */
+}
+
+.serviceCard0 i{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}.serviceCard0 h3{
+	margin-bottom: 20px;
+}
+
+/* -------------------------------------- End Service section ----------------------------------- */
+/* -------------------------------------- Blog section ----------------------------------- */
+.blogSection0 {
+	margin: 66px 0 50px 0;
+}
+.blogCard1{
+    margin: 12px;
+    width: 44vh;
+}
+.blogImage2 {
+	margin-top: 11px;
+	height: 30vh;
+}
+/* -------------------------------------- End Blog section ----------------------------------- */
+/* --------------------------------------  Clients section ----------------------------------- */
+.clientsSection0{
+    background: rgba(187, 187, 187, 0.36);
+
+}
+.clientsBody1 {
+	padding: 55px 0 50px 0;
+}
+.clientsImg3 {
+	width: 25vh;
+	height: 20vh;
+	padding: 4px;
+	border: 1px solid green;
+	margin: 23px;
+	border-radius: 27px;
+	box-shadow: 6px 5px 3px 0px rgba(87, 122, 161, 0.65);
+}
+
+.clientsImg3:hover{
+    transform: scale(1.2);
+    transition: transform .5s;
+}
+.clientsHeadText4 {
+	text-align: center;
+	border-bottom: 1px solid;
+	margin-bottom: 15px;
+	padding-bottom: 8px;
+}
+/* -------------------------------------- End Clients section ----------------------------------- */
+/* -------------------------------------- Contact section ----------------------------------- */
+.contactImg0 {
+    margin-top: 82px !important;
+    margin-left: 20px !important;
+    padding: 50px !important;
+    border: none;
+}
+/* -------------------------------------- End Contact section ----------------------------------- */
+/* ----------------------------------------Footer section ----------------------------------- */
+.footerSection0 {
+	padding: 20px 0;
+}
+.footesImg1 {
+    width: 8vh;
+    padding: 7px;
+    margin: 12px;
+    border: 1px solid;
+    border-radius: 13px;
+     text-align: center;
+}
+.footerText3 {
+    text-align: center;
+    margin-top: 28px;
+}
+/* -------------------------------------- End Footer section ----------------------------------- */
+/* -------------------------------------- Post Details section ----------------------------------- */
+.detailsImg {
+	width: 400px;
+	/* height: 300px; */
+	border-radius: 8px;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+.image_about img{
+	float: left;
+	margin:0 20px 0 15px;
+}
+
+.image_about p{
+	margin:15px;
+}
+
+/* -------------------------------------- End Post Details section ----------------------------------- */

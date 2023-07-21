@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Contact Us
+{% endblock %}
+
+{% block content %}
+    <section>
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <h2 class="text-center">Contact Us</h2>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button class="btn btn-outline-secondary">Submit</button>
+                        <br>
+                        <br>
+                    </form>
+                </div>
+                <div class="col ">
+                        <div class="center">
+                            <img class=" img-thumbnail contactImg0" src="{% static 'logo/logo.png' %}" alt="">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
