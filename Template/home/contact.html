@@ -14,7 +14,7 @@
             <h2 class="text-center">Contact Us</h2>
             <hr>
             <div class="row">
-                <div class="col">
+                <div class="col-md-6">
                     <form action="" method="POST">
                         {% csrf_token %}
                         {{ form.as_p }}
@@ -23,7 +23,7 @@
                         <br>
                     </form>
                 </div>
-                <div class="col ">
+                <div class="col-md-6 ">
                         <div class="center">
                             <img class=" img-thumbnail contactImg0" src="{% static 'logo/logo.png' %}" alt="">
                         </div>

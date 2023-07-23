@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TLC';
+    src: url('TLC3DNHP2DEMO.woff2') format('woff2'),
+        url('TLC3DNHP2DEMO.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
